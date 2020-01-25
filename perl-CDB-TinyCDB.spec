@@ -4,7 +4,6 @@
 
 %define		pdir	CDB
 %define		pnam	TinyCDB
-%include	/usr/lib/rpm/macros.perl
 Summary:	CDB::TinyCDB - Perl extension for TinyCDB library to cdb databases
 Name:		perl-CDB-TinyCDB
 Version:	0.05
