@@ -13,6 +13,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/A/AJ/AJGB/CDB-TinyCDB-%{version}.tar.gz
 # Source0-md5:	e77702b031264c6686a6f617e92b9e24
+Patch0:		not-pch.patch
 URL:		https://metacpan.org/release/CDB-TinyCDB/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -29,6 +30,7 @@ create CDB files.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \

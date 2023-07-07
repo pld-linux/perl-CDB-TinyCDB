@@ -1,0 +1,11 @@
+--- CDB-TinyCDB-0.05/Makefile.PL.orig	2010-03-15 15:59:56.000000000 +0100
++++ CDB-TinyCDB-0.05/Makefile.PL	2023-07-07 13:32:01.650730328 +0200
+@@ -51,7 +51,7 @@
+         push @cc, '-o' => $devnull;
+     }
+ 
+-    my $cmd = join " ", @cc, "cdb-check.h";
++    my $cmd = join " ", @cc, "-x", "c", "cdb-check.h";
+ 
+     warn "trying $cmd\n";
+ 
