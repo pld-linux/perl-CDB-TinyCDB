@@ -7,7 +7,7 @@
 Summary:	CDB::TinyCDB - Perl extension for TinyCDB library to cdb databases
 Name:		perl-CDB-TinyCDB
 Version:	0.05
-Release:	5
+Release:	6
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
